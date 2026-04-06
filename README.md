@@ -1,1 +1,1 @@
-# IFES - Página de projeto - Landing pade de bots e serviços
+# IFES - Página de projeto - Landing page de bots e serviços
