@@ -1,11 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Laboratorio HTML5 - Contato</title>
 </head>
 <body>
-    
+    <header id="topo-contato" class="cabecalho" title="Cabecalho da pagina de contato">
+        <h1>Contato</h1>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-contato" class="conteudo-principal" data-info="pagina-contato">
+        <section>
+            <h2>Formulario de contato</h2>
+            <p>Preencha os campos abaixo para enviar sua mensagem.</p>
+
+            <form action="#" method="post" class="formulario" title="Formulario principal de contato">
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <input id="nome" name="nome" type="text" required minlength="3" placeholder="Digite seu nome">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="email" type="email" required placeholder="exemplo@email.com">
+                </div>
+
+                <fieldset>
+                    <legend>Assunto</legend>
+                    <input id="assunto-suporte" name="assunto" type="radio" value="suporte" required>
+                    <label for="assunto-suporte">Suporte</label>
+
+                    <input id="assunto-orcamento" name="assunto" type="radio" value="orcamento">
+                    <label for="assunto-orcamento">Orcamento</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias de contato</legend>
+                    <input id="pref-email" name="preferencia_email" type="checkbox" value="sim">
+                    <label for="pref-email">Receber resposta por e-mail</label>
+
+                    <input id="pref-whatsapp" name="preferencia_whatsapp" type="checkbox" value="sim">
+                    <label for="pref-whatsapp">Receber resposta por WhatsApp</label>
+                </fieldset>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required minlength="10" rows="5" cols="30" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Obrigado pela visita. Volte para a <a href="../index.html">pagina inicial</a>.</p>
+    </footer>
 </body>
 </html>
