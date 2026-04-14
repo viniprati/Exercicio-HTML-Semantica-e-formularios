@@ -1,66 +1,105 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio HTML5 - Pagina Inicial</title>
+    
+    <title>Desenvolvedor Full Stack & Especialista em Bots para Discord | Vinicius Prati</title>
+    <meta name="description" content="Desenvolvimento web sob medida e criação de bots personalizados para Discord. Soluções Full Stack para escalar seu negócio ou comunidade.">
+    <meta name="keywords" content="desenvolvedor full stack, bots discord personalizados, criação de sites, automação discord, node.js, react, python">
+    <meta name="author" content="[Seu Nome]">
+    
+    <meta property="og:title" content="Soluções Web e Bots para Discord Personalizados">
+    <meta property="og:description" content="Transforme sua ideia em realidade com sistemas web e automações inteligentes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seusite.com.br">
+    
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="topo" class="cabecalho" title="Cabecalho principal">
-        <h1>Laboratorio de HTML5</h1>
-        <p>Projeto de pratica com estrutura semantica, navegacao e formularios.</p>
-        <nav aria-label="Menu principal">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <strong>Vinicius Prati</strong>
+            </div>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#pre-definidos">Pacotes</a></li>
                 <li><a href="./paginas/sobre.html">Sobre</a></li>
-                <li><a href="./paginas/contato.html">Contato</a></li>
+                <li><a href="./paginas/contato.html" class="cta-button">Fazer Orçamento</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="conteudo" class="conteudo-principal" data-info="pagina-inicial">
-        <section id="apresentacao">
-            <h2>Bem-vindo ao projeto</h2>
-            <p>Este site foi desenvolvido usando apenas <strong>HTML5</strong>, com foco em semantica e organizacao.</p>
-            <p>Acesse as outras paginas pelo menu para ver tabela e formulario completos.</p>
+    <main>
+        <section id="hero">
+            <h1>Desenvolvedor Full Stack Web & Especialista em <span>Bots para Discord</span></h1>
+            <p>Desenvolvo ecossistemas digitais completos: desde sites de alta performance até automações complexas para sua comunidade.</p>
+            <div class="buttons">
+                <a href="./paginas/contato.html" class="btn-primary">Solicitar Projeto Personalizado</a>
+                <a href="#servicos" class="btn-secondary">Ver Serviços</a>
+            </div>
         </section>
 
-        <section id="destaques">
-            <h2>Destaques do conteudo</h2>
-            <article class="cartao" title="Exemplo de uso de article">
-                <h3>Tecnologias abordadas</h3>
-                <p>O projeto inclui exemplos de titulos, paragrafos, listas e elementos inline como <em>destaque</em> e <a href="./paginas/sobre.html">links relativos</a>.</p>
-                <ul>
-                    <li>Estrutura semantica com header, nav, main, section, article e footer</li>
-                    <li>Tabela com cabecalho e corpo</li>
-                    <li>Formulario com validacao HTML5</li>
-                </ul>
-            </article>
+        <section id="servicos">
+            <h2>Soluções Sob Medida</h2>
+            <div class="grid-servicos">
+                <article>
+                    <h3>Desenvolvimento Web Full Stack</h3>  
+                    <img src="images/html.png" alt="Html icon">
+                    <img src="images/image.png" alt="Discord logo">
+                    <img src="images/css.png" alt="css logo">
+                    <img src="images/database.png" alt="Database logo">
+
+                    <p>Criação de Landing Pages, Dashboards e sistemas web modernos utilizando tecnologias de ponta (React, Node.js, Bancos de Dados).</p>
+                </article>
+
+                <article>
+                    <h3>Bots para Discord Personalizados</h3>
+                    <p>Automação de moderação, sistemas de economia, integração com APIs externas e funcionalidades exclusivas para sua guilda.</p>
+                </article>
+
+                <article>
+                    <h3>Manutenção e Escalabilidade</h3>
+                    <p>Otimização de sistemas existentes para garantir velocidade, segurança e suporte contínuo.</p>
+                </article>
+            </div>
         </section>
 
-        <section id="galeria">
-            <h2>Imagens do projeto</h2>
-            <img src="./assets/imagens/html.png" alt="Logo representando HTML" width="120">
-            <img src="./assets/imagens/css.png" alt="Logo representando CSS" width="120">
+        <section id="pre-definidos">
+            <h2>Opções Populares</h2>
+            <div class="tabela-precos">
+                <div class="card">
+                    <h3>Bot de Moderação Base</h3>
+                    <p>O essencial para seu servidor começar profissional.</p>
+                    <ul>
+                        <li>Sistema de Logs</li>
+                        <li>Auto-moderação</li>
+                        <li>Comandos de Ticket</li>
+                    </ul>
+                    <a href="#" class="btn-buy">Saber mais</a>
+                </div>
+
+                <div class="card highlight">
+                    <h3>Landing Page Pro</h3>
+                    <p>Ideal para lançamentos de produtos ou serviços.</p>
+                    <ul>
+                        <li>SEO Otimizado</li>
+                        <li>Design Responsivo</li>
+                        <li>Integração com WhatsApp</li>
+                    </ul>
+                    <a href="#" class="btn-buy">Saber mais</a>
+                </div>
+            </div>
         </section>
 
-        <section id="video-externo">
-            <h2>Conteudo externo</h2>
-            <p>Exemplo de iframe com video do YouTube:</p>
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/qz0aGYrrlhU"
-                title="Video introdutorio de HTML"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
-        </section>
     </main>
 
-    <footer class="rodape">
-        <p>&copy; 2026 - Projeto academico de HTML5.</p>
+    <footer>
+        <p>&copy; 2026 Vinicius Prati - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
