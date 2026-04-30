@@ -1,0 +1,280 @@
+﻿* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f5f7fb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.8rem;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+#hero span {
+  color: #2563eb;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-buy,
+.cta-button {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+.btn-primary,
+.btn-buy,
+.cta-button {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-buy:hover,
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.grid-servicos,
+.tabela-precos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+article,
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fafcff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.card h3 {
+  margin-bottom: 0.2rem;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.card-tag {
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  background: #dbeafe;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.card-list {
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.card-list li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.card-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.highlight {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.btn-buy {
+  margin-top: auto;
+}
+
+img {
+  max-width: 40px;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+#contato p {
+  color: #334155;
+}
+
+.form-contato {
+  margin-top: 1.1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.form-field label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.72rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #0f172a;
+  font: inherit;
+}
+
+.form-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
+}
+
+.checkbox-field {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.checkbox-field input {
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+}
+
+.btn-submit {
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.75rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  background: #2563eb;
+  transition: opacity 0.2s;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  color: #475569;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

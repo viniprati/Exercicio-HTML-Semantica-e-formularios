@@ -26,15 +26,61 @@
             <h2>Vamos tirar seu projeto do papel?</h2>
             <p>Preencha o formulário ou me chame diretamente no Discord.</p>
             
-            <form action="#" method="POST">
-                <input type="text" name="nome" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
-                <select name="servico">
-                    <option value="web">Desenvolvimento Web</option>
-                    <option value="bot">Bot para Discord</option>
-                    <option value="outro">Outro</option>
-                </select>
-                <textarea name="mensagem" placeholder="Descreva seu projeto..."></textarea>
+            <form action="#" method="POST" class="form-contato">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="nome">Nome completo</label>
+                        <input id="nome" type="text" name="nome" placeholder="Ex: Vinicius Prati" minlength="3" maxlength="80" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="voce@empresa.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="telefone">Telefone (WhatsApp)</label>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(27) 99999-9999" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" autocomplete="tel-national" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="servico">Tipo de serviço</label>
+                        <select id="servico" name="servico" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="web">Desenvolvimento Web</option>
+                            <option value="bot">Bot para Discord</option>
+                            <option value="web-bot">Web + Bot Integrado</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="orcamento">Faixa de orçamento</label>
+                        <select id="orcamento" name="orcamento" required>
+                            <option value="" disabled selected>Selecione uma faixa</option>
+                            <option value="ate-1000">Até R$ 1.000</option>
+                            <option value="1000-3000">R$ 1.000 a R$ 3.000</option>
+                            <option value="3000-7000">R$ 3.000 a R$ 7.000</option>
+                            <option value="7000-mais">Acima de R$ 7.000</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="prazo">Prazo desejado</label>
+                        <input id="prazo" type="date" name="prazo" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="mensagem">Detalhes do projeto</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Me conte objetivo, funcionalidades e referências..." minlength="20" maxlength="1200" required></textarea>
+                </div>
+
+                <div class="form-field checkbox-field">
+                    <input id="aceite" type="checkbox" name="aceite" required>
+                    <label for="aceite">Concordo com o uso dos meus dados para retorno de contato.</label>
+                </div>
+
                 <button type="submit" class="btn-submit">Enviar Proposta</button>
             </form>
         </section>
