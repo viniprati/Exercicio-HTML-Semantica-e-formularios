@@ -2,19 +2,16 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/",
-      "destination": "/Projeto/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/Projeto/$1"
+      "destination": "/Projeto/index.html",
+      "permanent": false
     }
   ],
   "headers": [
     {
-      "source": "/images/(.*)",
+      "source": "/Projeto/images/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -23,7 +20,7 @@
       ]
     },
     {
-      "source": "/assets/(.*)",
+      "source": "/Projeto/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -32,7 +29,7 @@
       ]
     },
     {
-      "source": "/(.*).css",
+      "source": "/Projeto/(.*).css",
       "headers": [
         {
           "key": "Cache-Control",
